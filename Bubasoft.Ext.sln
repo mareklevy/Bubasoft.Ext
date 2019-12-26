@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubasoft.Ext", "src\Bubasoft.Ext\Bubasoft.Ext.csproj", "{370E7B5D-E807-4CCA-A568-F740D598E79E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{370E7B5D-E807-4CCA-A568-F740D598E79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370E7B5D-E807-4CCA-A568-F740D598E79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370E7B5D-E807-4CCA-A568-F740D598E79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370E7B5D-E807-4CCA-A568-F740D598E79E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC8C59C-3176-4BF5-BEBF-1B8FD6F69C47}
+	EndGlobalSection
+EndGlobal

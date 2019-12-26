@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bubasoft.Ext</name>
+    </assembly>
+    <members>
+        <member name="T:Bubasoft.Ext.Rop.Result`2">
+            <summary>
+            Railway Oriented Programming
+            https://www.youtube.com/watch?v=uM906cqdFWE
+            https://github.com/habaneroofdoom/AltNetRop﻿
+            </summary>
+            <typeparam name="TSuccess"></typeparam>
+            <typeparam name="TFailure"></typeparam>
+        </member>
+    </members>
+</doc>
