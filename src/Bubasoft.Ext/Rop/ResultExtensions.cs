@@ -315,5 +315,43 @@
 
             await f.Invoke(result.Failure).ConfigureAwait(continueOnCapturedContext: false); ;
         }
+
+        /// <summary>
+        /// Returns the existing value if present, and otherwise an alternative value.
+        /// </summary>
+        /// <typeparam name="TSuccess"></typeparam>
+        /// <typeparam name="TFailure"></typeparam>
+        /// <param name="result"></param>
+        /// <param name="alternative"></param>
+        /// <returns></returns>
+        public static TSuccess ValueOr<TSuccess, TFailure>(this Result<TSuccess, TFailure> result, TSuccess alternative)
+        {
+            if (result.IsSuccess)
+            {
+                return result.Success;
+            }
+
+            return alternative;
+        }
+
+        /// <summary>
+        /// Returns the existing value if present, and otherwise an alternative value.
+        /// </summary>
+        /// <typeparam name="TSuccess"></typeparam>
+        /// <typeparam name="TFailure"></typeparam>
+        /// <param name="resultTask"></param>
+        /// <param name="alternative"></param>
+        /// <returns></returns>
+        public static async Task<TSuccess> ValueOrAsync<TSuccess, TFailure>(this Task<Result<TSuccess, TFailure>> resultTask, TSuccess alternative)
+        {
+            var result = await resultTask;
+
+            if (result.IsSuccess)
+            {
+                return result.Success;
+            }
+
+            return alternative;
+        }
     }
 }
